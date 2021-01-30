@@ -8,29 +8,26 @@ const App = () => {
   return (
     <>
       <Header
-        title="Hello World, React.JS!"
-        descr="Гораздо легче найти ошибку, чем истину."
+        title="Pokemon Game"
+        descr="This is simple triple triad card game"
       />
       <Layout
-        id="section1"
+        id="rules"
         title="Section #1"
         descr="Лучший человек скромен в своей речи, но решителен в своих действиях."
         urlBg={BackgroundImage1}
-        colorBg={false}
       />
       <Layout
-        id="section2"
+        id="cards"
         title="Section #2"
         descr="В одном часе любви – целая жизнь."
-        urlBg={false}
-        colorBg="red"
+        colorBg="#a49da7"
       />
       <Layout
-        id="section3"
+        id="about"
         title="Section #3"
         descr="Жизнь требует движений."
         urlBg={BackgroundImage3}
-        colorBg={false}
       />
       <Footer />
     </>
