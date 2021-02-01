@@ -1,6 +1,6 @@
 import s from "./style.module.css";
 
-const Layout = ({ id, title, descr, urlBg, colorBg }) => {
+const Layout = ({ id, title, urlBg, colorBg, children }) => {
   const sectionStyles = {};
 
   if (urlBg) {
@@ -21,11 +21,7 @@ const Layout = ({ id, title, descr, urlBg, colorBg }) => {
               <span className={s.separator}></span>
             </div>
           )}
-          {descr && (
-            <div className={`${s.desc} ${s.full}`}>
-              <p>{descr}</p>
-            </div>
-          )}
+          {children && <div className={`${s.desc} ${s.full}`}>{children}</div>}
         </article>
       </div>
     </section>
